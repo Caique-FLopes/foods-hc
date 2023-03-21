@@ -1,0 +1,131 @@
+body {
+
+    background-color: #e9e9ee;
+}
+
+.text {
+    margin: 100px 20px 100px;
+    /*border:tipo tamanho cor;*/
+    border: solid 3px rgb(29, 27, 27);
+    border-radius: 20px;
+    padding: 10px 10px 30px;
+    background-color: rgb(192, 127, 127);
+    box-shadow: 10px 10px 5px rgb(68, 65, 65);
+}
+
+.titulo {
+    position: relative;
+    color: #e9e9ee;
+    font-family: sans-serif
+}
+
+.titulo::before{
+    content: "HC FOOD";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    color: #d46d4d;
+    border-right: 8px solid #d46d4d;
+    transition: 1s ease-in-out;
+}
+
+.titulo:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px #d46d4d);
+}
+
+
+
+.box {
+    display: flex;
+    height: 320px;
+    width: 600px;
+    gap: 1rem;
+}
+
+.spc1 {
+    background: url("https://besthqwallpapers.com/Uploads/22-2-2020/122844/thumb2-fried-chicken-fried-food-fried-chicken-legs-4k-fast-food.jpg");
+}
+
+.spc2 {
+    background: url("https://images7.alphacoders.com/358/358131.jpg");
+}
+
+.spc3 {
+    background: url("https://images7.alphacoders.com/596/596343.jpg");
+}
+
+.spc4 {
+    background: url("https://images2.alphacoders.com/108/1084626.jpg");
+}
+
+.spc5 {
+    background: url("https://i0.wp.com/blogchefcenter.com.br/wp-content/uploads/2019/02/275602-top-5-sobremesas-geladas-que-sao-a-aposta-do-verao.jpg?fit=940%2C627&ssl=1");
+}
+
+.box >div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.box > div:hover{
+    flex: 5;
+}
+
+.menu {
+    padding-top: 19px;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:auto;
+    font-family: sans-serif;
+
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #fbfbfb(233, 224, 224);
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+a:before,
+a:after{
+    content:"";
+    position:absolute;
+    height: 3px;
+    width: 0;
+    background: #d46d4d;
+    transition: .5s;
+}
+
+a:after{
+    left: 0;
+    bottom: -10px;
+}
+
+a::before{
+    right: 0;
+    top: -10px;
+}
+
+a:hover:after,
+a:hover:before{
+    width: 100%;
+}
+
+.text {
+    display: table;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+}

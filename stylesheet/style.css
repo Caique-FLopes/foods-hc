@@ -1,8 +1,24 @@
 body {
-
+    margin: 0;
+    padding: 0;
     background-color: #e9e9ee;
 }
-
+header{
+    display: flex;
+    background: #363636;
+}
+header .img-logo img{
+max-width: 80px;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    color: #fbfbfb;
+}
 .text {
     margin: 100px 20px 100px;
     /*border:tipo tamanho cor;*/
@@ -78,14 +94,10 @@ body {
 }
 
 .menu {
-    padding-top: 19px;
-    width: 70vw;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin:auto;
     font-family: sans-serif;
-
+    margin:auto;
 }
 
 a {
@@ -104,7 +116,7 @@ a:after{
     position:absolute;
     height: 3px;
     width: 0;
-    background: #d46d4d;
+    background: #d3d3d3;
     transition: .5s;
 }
 

@@ -39,7 +39,7 @@ header nav ul li a{
 }
 
 .titulo::before{
-    content: "HC FOOD...";
+    content: "O que sua fome pede?";
     position: absolute;
     width: 0;
     height: 100%;
@@ -58,7 +58,7 @@ header nav ul li a{
     filter: drop-shadow(0 0 25px #363636);
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -66,11 +66,11 @@ header nav ul li a{
 
 .box {
     display: flex;
-    height: 320px;
+    height: 420px;
     width: 600px;
     gap: 1rem;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -132,7 +132,7 @@ a:after{
     height: 3px;
     width: 0;
     background: #d3d3d3;
-    transition: .5s;
+    transition: .4s;
 }
 
 a:after{
@@ -155,4 +155,19 @@ a:hover:before{
     width: 250px;
     height: 100px;
     text-align: center;
+}
+
+.search-box {
+    padding: 25px;
+    position: relative;
+    display: inline-block;
+}
+  
+.search-txt {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
